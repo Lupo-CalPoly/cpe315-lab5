@@ -45,8 +45,8 @@ data in your report.
 
 An example table:
 
-|ARM no opt | ARM opt | Intel no opt | Intel opt
-|-----------|---------|--------------|----------
+Experiment | ARM no opt | ARM opt | Intel no opt | Intel opt
+-----------|------------|---------|--------------|----------
 Runtime (matmul) | | | |
 Cache Misses (matmul) | | | |
 Page Faults (matmul) | | | |
