@@ -45,14 +45,14 @@ data in your report.
 
 An example table:
 
-ARM no opt | ARM opt | Intel no opt | Intel opt
------------|---------|--------------|----------
-Runtime (matmul) | | | 
-Cache Misses (matmul) | | |
-Page Faults (matmul) | | |
-Runtime (structs) | | |
-Cache Misses (structs) | | |
-Page Faults (structs) | | |
+|ARM no opt | ARM opt | Intel no opt | Intel opt
+|-----------|---------|--------------|----------
+Runtime (matmul) | | | |
+Cache Misses (matmul) | | | |
+Page Faults (matmul) | | | |
+Runtime (structs) | | | |
+Cache Misses (structs) | | | |
+Page Faults (structs) | | | |
 
 Explain your results in your report (e.g. correlate cache misses and 
     page-faults to measured performance).
