@@ -1,11 +1,11 @@
 CXX = g++
-CFLAGS = -Wall -O2
-LDFLAGS = -lrt
-SRCS = matmul.cpp matmul-driver.cpp 
+CXXFLAGS = -Wall -O2
+CXXSRCS = matmul.cpp matmul-driver.cpp 
 BIN = mm
 
 all:
-	$(CXX) $(CFLAGS) $(LDFLAGS) -o $(BIN) $(SRCS)
+	$(CXX) $(CXXFLAGS) -c $(CXXSRCS)
+	$(CXX) $(CXXFLAGS) -o $(BIN) *.o
 
 clean:
-	rm -f $(BIN)
+	rm -f $(BIN) *.o
