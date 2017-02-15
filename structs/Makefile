@@ -1,7 +1,7 @@
 CXX = g++
 CFLAGS = -Wall -O2
 LDFLAGS = -lrt
-SRCS = structs.cpp hrt.c
+SRCS = structs.cpp 
 BIN = computeavg 
 
 all:

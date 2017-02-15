@@ -4,7 +4,6 @@
 // includes
 #include <stdlib.h>
 #include <stdio.h>
-#include "hrt.h"
 
 // Adjust the number of elements based on architecture
 #ifdef __arm__
@@ -36,17 +35,9 @@ int main(int argc, char** argv) {
   // This will also need to change
   AoS  = (myNums *) malloc(NUMVALUES*sizeof(myNums));
 
-  hrt_start();
   init_nums(AoS);  // time the initialization
-  hrt_stop();
-  fprintf(stdout, "Initialization time of three %d vectors took %s.\n",
-      NUMVALUES, hrt_string());
   
-  hrt_start();
   compute_averages(AoS);  // time the computation
-  hrt_stop();
-  fprintf(stdout, "Computation time of three %d vectors took %s.\n",
-      NUMVALUES, hrt_string());
 
   // Free 
   free(AoS);

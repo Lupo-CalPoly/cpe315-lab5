@@ -10,7 +10,6 @@
 
 // includes, kernels
 #include "matmul.h"
-#include "hrt.h"
 
 void matmul(float*, const float*, const float*, unsigned int, unsigned int, 
     unsigned int);
@@ -49,12 +48,7 @@ int main(int argc, char** argv) {
     return 1;
   }
   
-  hrt_start();
   matmul(P.elements, M.elements, N.elements, HM, WM, WN);
-  hrt_stop();
-
-  fprintf(stderr, "Matrix Multiply of two 1024x1024 matrices took %s.\n",
-      hrt_string());
 
   PrintMat(P);
 
