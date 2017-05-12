@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -Wall -O2
+CXXFLAGS = -g -Wall -O0
 CXXSRCS = matmul.cpp matmul-driver.cpp 
 BIN = mm
 
@@ -8,4 +8,4 @@ all:
 	$(CXX) $(CXXFLAGS) -o $(BIN) *.o
 
 clean:
-	rm -f $(BIN) *.o
+	rm -f *.o
