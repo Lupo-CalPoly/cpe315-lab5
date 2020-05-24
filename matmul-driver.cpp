@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
   // Number of elements in the solution matrix
   //  Assuming square matrices, so the sizes of M, N and P are equal
 
-  srand(2016);
+  srand(2204);
 
   // Check command line for input matrix files
   if(argc == 1) 
