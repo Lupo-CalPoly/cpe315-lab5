@@ -45,7 +45,8 @@ Matrix Allocate2ndMatrix(int height, int width)
   /* This is a row-major allocation and initialization.
    * You need to modify this function which is only called
    * for Matrix B such that a column-major ordering is
-   * performed. */
+   * performed.
+   * Hint: a nested for-loop is probably needed. */
   for(unsigned int i = 0; i < M.height * M.width; i++)
   {
     M.elements[i] = (rand() / (float)RAND_MAX);
