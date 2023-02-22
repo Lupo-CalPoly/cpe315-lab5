@@ -1,0 +1,6 @@
+*.o
+*.out
+a.out
+mm
+mm-col
+.swp*
